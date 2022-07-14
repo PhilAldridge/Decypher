@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+<script src="../includes/jquery.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Main</title>
+</head>
+
+<body>
+
+<div id="container">
+<div id="timer"></div>
+<div id="menubutton"><form action="/"><input type="button" value="&#9776;" onmouseover="$('#menu').css({'visibility': 'visible'})" onmousedown="$('#menu').css({'visibility': 'visible'})" onmouseout="$('#menu').css({'visibility': 'hidden'})"/></form></div>
+<div id="menu" onmouseover="$('#menu').css({'visibility': 'visible'})" onmousedown="$('#menu').css({'visibility': 'visible'})" onmouseout="$('#menu').css({'visibility': 'hidden'})">
+	<div><input type="button" value="This" /></div>
+	<div><input type="button" value="is" /></div>
+	<div><input type="button" value="the" /></div>
+	<div><input type="button" value="menu" /></div>
+</div>
+
+<div id="card0" class="card" data-pos="0">
+	<div id = "card0text" class="cardtext"><p class="centerhack">I can</p></div>
+    <div id="card0translated" class="cardtranslated"><p class="centerhack">мога</p></div>
+
+</div>
+
+<div id="card1" class="card" data-pos="1">
+	<div id = "card1text" class="cardtext"><p class="centerhack">You can</p></div>
+    <div id="card1translated" class="cardtranslated"><p class="centerhack">можете да</p></div>
+</div>
+
+<div id="card2" class="card" data-pos="2">
+	<div id = "card2text" class="cardtext"><p class="centerhack">You both can</p></div>
+    <div id="card2translated" class="cardtranslated"><p class="centerhack">вие двамата могат да</p></div>
+</div>
+
+<div id="card3" class="card" data-pos="3">
+	<div id = "card3text" class="cardtext"><p class="centerhack">We can</p></div>
+    <div id="card3translated" class="cardtranslated"><p class="centerhack">можем</p></div>
+</div>
+
+<div id="card4" class="card" data-pos="4">
+	<div id = "card4text" class="cardtext"><p class="centerhack">They can</p></div>
+    <div id="card4translated" class="cardtranslated"><p class="centerhack">те могат</p></div>
+</div>
+
+<div id = "seeanswerbutton" class="cardbuttons">
+    	<form action="/"><input type="button" value = "&#9898; See Answer" onclick="viewAnswer()"/> </form>
+</div>
+
+<div id = "cardbuttons" class="cardbuttons">
+    	<form action="/"><input type="button" value = "&#10008; Again" onclick="numberCorrect = 0; currentCard = changeCard(currentCard, totalCards)"/> <input type="button" value="&#10004; Got it!" onclick="numberCorrect += 1; currentCard = changeCard(currentCard, totalCards)" /></form>
+</div>
+<div id="correctmarkers"><span id="1correct">&nbsp;</span><span id="2correct">&nbsp;</span><span id="3correct">&nbsp;</span><span id="4correct">&nbsp;</span><span id="5correct">&nbsp;</span><span id="6correct">&nbsp;</span><span id="7correct">&nbsp;</span><span id="8correct">&nbsp;</span><span id="9correct">&nbsp;</span><span id="10correct">&nbsp;</span></div>
+
+<div id="left" class="arrows" onmouseover="$('#left').css({'background-color': '#DADADA'})" onmouseout="$('#left').css({'background-color': ''})" onclick="confirm('Go back to the previous section?')"><span class="arrowchild">&lt;</span></div>
+<div id="right" class="arrows" onmouseover="$('#right').css({'background-color': '#DADADA'})" onmouseout="$('#right').css({'background-color': ''})" onclick="confirm('Skip to the next section?')"><span class="arrowchild">&gt;</span></div>
+</div>
+
+<script src="./scripts/tester.js"></script>
+</body>
+
+</html>

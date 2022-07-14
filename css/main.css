@@ -1,0 +1,214 @@
+	body
+	{
+		margin:0;
+		font-family: Tahoma, Verdana;
+		font-size: large;
+		text-align:center;
+	}
+	
+	div
+	{
+		border:thin;
+		border-color:#CCC;
+	}
+	
+	#timer
+	{
+		position:absolute;
+		background-color:#999;
+		width:0px;
+		height:5%;
+		z-index:2;
+	}
+	
+	#container
+	{
+		min-height:480;
+		min-width:320;
+		background-color:#CCC;	
+	}
+	
+	#menubutton
+	{
+		position:fixed;
+		right:10px;
+		top:2px;
+		z-index:4;
+	}
+	
+	#menubutton input
+	{
+		border:thin;
+		border-style:solid;		
+		border-color:#CCC;
+	}	
+	
+	.card
+	{
+		position:fixed;
+		top:50%;
+		left:50%;
+		text-align:center;
+		background-color:#FFF;
+		margin-left:-150px;
+		margin-top:-170px;
+		width:300px;
+		height:340px;	
+	}
+	
+	#card0
+	{
+		z-index:2;
+	}
+	
+	.card > div
+	{
+		height:33%;
+		width:90%;
+		padding:5%;
+		display: table;
+	}
+	
+	.centerhack
+	{
+		display:table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
+	
+	.cardtext
+	{
+		border-bottom-style:solid;	
+	}
+	
+	.cardtranslated
+	{
+		visibility:hidden;
+	}
+	
+	#cardbuttons
+	{
+		position:absolute;
+		top:50%;
+		z-index:5;
+		padding-top:5px;
+		margin-top:117px;
+		left:50%;
+		margin-left:-150px;
+		visibility:hidden;
+		border-top-style:solid;
+		text-align:center;
+		margin-left:-150px;
+		width:300px;
+	}
+	
+	#seeanswerbutton
+	{
+		position:absolute;		
+		visibility:visible;
+		z-index:5;
+		top:50%;
+		padding-top:5px;
+		margin-top:117px;
+		left:50%;
+		border:thin;
+		border-color:#CCC;
+		border-top-style:solid;
+		width:300px;
+		text-align:center;
+		margin-left:-150px;
+	}
+	
+	#correctmarkers
+	{
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin-top:155px;
+		margin-left:-150px;
+		min-height:15px;
+		min-width:300px;
+		z-index:4;
+		background-color:#FFF;
+		text-align:center;
+		font-weight:bold;
+		border-top-style:solid;
+	}
+	
+	#correctmarkers > span
+	{
+		display:inline-block;
+		min-width:10%;
+		z-index:4;
+	}
+	
+	.arrows
+	{
+		position:absolute;
+		min-height:100%;
+		width:20px;
+		bottom:0px;
+		vertical-align: middle;
+		border-color:#DADADA;
+		color:#FFF;	
+	}
+	
+	.arrowchild
+	{
+		position:absolute;
+		top:50%;
+		left:1px;
+		font-size:30px;
+		font-weight:bolder;
+	}
+	
+	#left
+	{
+		left:1px;
+		border-right-style:solid;
+	}
+	
+	#right
+	{
+		right:1px;
+		border-left-style:solid;
+	}
+	
+	input[type=button]
+	{
+		padding-top:5px;
+		padding-bottom:3px;
+		padding-left:20px;
+		padding-right:20px;
+		color:#33ADFF;
+		background-color:#FFF;
+		border-style:none;
+		min-height:27px;
+		margin-left:20px;
+		margin-right:20px;
+	}
+	
+	input[type=button]:hover
+	{
+		background-color:#DADADA;
+	}
+	
+	#menu
+	{
+		background-color:#FFF;
+		text-align:left;
+		display:inline-block;
+		position:absolute;
+		z-index:5;
+		right:10px;
+		top:31px;
+		visibility:hidden;
+	}
+	
+	#menu input[type=button]
+	{
+		width:100%;
+		text-align:left;
+		margin-left:0px;
+		margin-right:0px;
+	}
