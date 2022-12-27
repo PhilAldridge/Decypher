@@ -6,3 +6,5 @@ The program was designed to introduce new words and conjugations slowly, to take
 I made the website utilizing javascript, php, an SQL database and the Microsoft Translate API.
 
 Unfortunately, the website is no longer hosted, but you can see a video of the site in action here: https://youtu.be/JaADR_Ck7bU
+
+![Screenshot](dec.png)
